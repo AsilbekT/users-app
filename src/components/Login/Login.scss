@@ -1,0 +1,24 @@
+.auth {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  input:not([type='checkbox']) {
+    min-width: 35rem;
+  }
+
+  &__wrapper {
+    min-height: var(--content-min-height);
+    flex-direction: column;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}

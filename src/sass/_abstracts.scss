@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #3498db;
+  --color-grey: #ecf0f1;
+  --bg-color: #fff;
+  --primary-color-dark: #2e88c5;
+  --color-red: #e74c3c;
+  --color-yellow: #f1c40f;
+  --color-red-pale: #ecada6;
+  --secondary-color: #3498db;
+  --green-color: #2ecc71;
+  --color-black: #292929;
+  --color-grey-dark: #737373;
+
+  --navigation-height: 8rem;
+  --panel-hidden-width: 8rem;
+  --content-min-height: calc(100vh - var(--navigation-height));
+  --panel-width: 45rem;
+  --container-width: 110rem;
+  --border-radius-sm: 0.1rem;
+  --border-radius: 0.2rem;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,27 @@
+.plogin {
+  padding: 3rem 0;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    min-height: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+
+    & > div {
+      display: flex;
+    }
+
+    .input {
+      width: 45rem;
+      padding: 1.5rem 2rem !important;
+      font-size: 1.7rem !important;
+    }
+  }
+}

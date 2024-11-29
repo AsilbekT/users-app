@@ -13,6 +13,7 @@
     "createdAt": "Created at",
     "updatedAt": "Updated at",
     "quotes": "Quotes",
+    "comment": "Comment",
     "In Process": "In Process",
     "Pending": "Pending",
     "Denied": "Denied",
@@ -53,6 +54,7 @@
     "notFound": "Page or requested prisoner is not found. Please try again",
     "myQuotes": "My Quotes",
     "enterPrisonerId": "Enter your prisoner ID to proceed",
+    "denialReason": "Reason of denial",
     "empty": "No quotes found, try to submit quote to see its status here."
   }
 }

@@ -13,6 +13,8 @@
     "createdAt": "Создано",
     "updatedAt": "Обновлено",
     "quotes": "Заявки",
+    "denialReason": "Причина отказа",
+    "comment": "Комментарий",
     "In Process": "В процессе",
     "Pending": "Ожидание",
     "Denied": "Отклонено",

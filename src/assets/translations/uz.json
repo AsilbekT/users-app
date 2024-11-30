@@ -55,6 +55,7 @@
     "notFound": "Sahifa yoki so‘ralgan mahbus topilmadi. Iltimos, qayta urinib ko‘ring",
     "myQuotes": "Mening arizalarim",
     "enterPrisonerId": "Davom etish uchun mahbus ID ni kiriting",
-    "empty": "Ariza topilmadi, bu yerda uning holatini ko‘rish uchun ariza yuborib ko‘ring."
+    "empty": "Ariza topilmadi, bu yerda uning holatini ko‘rish uchun ariza yuborib ko‘ring.",
+    "somethingWrong": "Xatolik yuz berdi"
   }
 }

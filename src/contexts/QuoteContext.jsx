@@ -63,7 +63,7 @@ export const QuoteContextProvider = ({ children }) => {
 
   const activeActivity = useMemo(() => {
     if (quoteTypes.length) {
-      const activityType = window.location.pathname
+      const activityType = location.pathname
         .split('/')
         .at(-1);
       return quoteTypes.find(

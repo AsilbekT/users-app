@@ -38,7 +38,7 @@
     "next": "Keyingi",
     "preview": "Ko‘rib chiqish",
     "save": "Saqlash",
-    "confirmIdentity": "ariza yuborish uchun shaxsiyatingizni tasdiqlang",
+    "confirmIdentity": "Ariza yuborish uchun shaxsingizni tasdiqlang",
     "matchFace": "Yuzingiz ko‘rsatilgan doiraga mos kelishi kerak",
     "shoot": "Suratga olish",
     "tryAgain": "Qaytadan urinish",
@@ -56,6 +56,7 @@
     "myQuotes": "Mening arizalarim",
     "enterPrisonerId": "Davom etish uchun mahbus ID ni kiriting",
     "empty": "Ariza topilmadi, bu yerda uning holatini ko‘rish uchun ariza yuborib ko‘ring.",
-    "somethingWrong": "Xatolik yuz berdi"
+    "somethingWrong": "Xatolik yuz berdi",
+    "nextDate": "Keyingi uchrashuv"
   }
 }

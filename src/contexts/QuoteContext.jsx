@@ -63,7 +63,7 @@ export const QuoteContextProvider = ({ children }) => {
 
   const activeActivity = useMemo(() => {
     if (quoteTypes.length) {
-      const activityType = location.pathname
+      const activityType = window.location.pathname
         .split('/')
         .at(-1);
       return quoteTypes.find(
@@ -150,7 +150,6 @@ export const QuoteContextProvider = ({ children }) => {
     const quoteTemplate = await generateQuoteFile();
     const fileSubmitFormData = new FormData();
     fileSubmitFormData.append('document_file', quoteTemplate);
-    saveAs(quoteTemplate);
     await submitQuote(
       `requests/${createdRequest.id}/upload-file/`,
       {
@@ -160,10 +159,11 @@ export const QuoteContextProvider = ({ children }) => {
     );
   };
 
-  const declineQuote = async (quote) => {
+  const declineQuote = async (quote, comment) => {
     if (!user) return;
     await submitQuote(`requests/${quote.id}/deny/`, {
       method: 'POST',
+      data: { comment }
     });
     window.location.reload();
   };

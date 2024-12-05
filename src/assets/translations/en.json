@@ -56,6 +56,7 @@
     "enterPrisonerId": "Enter your prisoner ID to proceed",
     "denialReason": "Reason of denial",
     "empty": "No quotes found, try to submit quote to see its status here.",
-    "somethingWrong": "Something went wrong"
+    "somethingWrong": "Something went wrong",
+    "nextDate": "Next available date"
   }
 }

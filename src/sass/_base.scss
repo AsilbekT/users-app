@@ -90,3 +90,11 @@ input[type='number'] {
     font-size: 1.6rem;
   }
 }
+
+textarea {
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+}

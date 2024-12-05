@@ -30,6 +30,7 @@ const Review = () => {
   const [showApproveModal, setShowApproveModal] =
     useState(false);
   const { pathname } = useLocation();
+  const [comment, setComment] = useState('');
 
   const quoteId = useMemo(
     () => pathname.split('/').at(-1),
@@ -83,10 +84,19 @@ const Review = () => {
         title={t('decline')}
         open={showDeclineModal}
         loading={decliningQuote}
-        onClickSubmit={() => declineQuote(quote)}
+        onClickSubmit={() => declineQuote(quote, comment)}
         onClose={() => setShowDeclineModal(false)}
       >
         <p className="text">{t('sureToDecline')}</p>
+        <div className="input-wrapper">
+          <label>{t('comment')}</label>
+          <textarea
+            value={comment}
+            className="input"
+            onChange={(e) => setComment(e.target.value)}
+            placeholder={t('comment')}
+          />
+        </div>
       </Modal>
       <div className="container">
         <div className="review__content">
@@ -112,6 +122,11 @@ const Review = () => {
               <p className="text">
                 <span>ID:</span> {quote.id}
               </p>
+              {quote.comment && (
+                <p className="text">
+                  <span>{t('denialReason')}:</span> {quote.comment}
+                </p>
+              )}
               <p className="text">
                 <span>{t('prisoner')}:</span>{' '}
                 {prisoner.full_name} #{prisoner.prisoner_id}
@@ -125,6 +140,12 @@ const Review = () => {
                   <GoDeviceCameraVideo />
                 )}
               </p>
+              {prisoner?.next_available_date && (
+                <p className="text">
+                  <span>{t('nextDate')}:</span>{' '}
+                  {toUserDate(prisoner.next_available_date)}
+                </p>
+              )}
               <p className="text">
                 <span>{t('createdAt')}:</span>{' '}
                 {toUserDate(quote.created_at)}
